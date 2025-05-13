@@ -1,353 +1,466 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT's Day 2025</title>
+    <link
+      rel="shortcut icon"
+      href="/Public/Asset/Img/LOGO ITS DAY (ONLY IT).png"
+      type="image/x-icon"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IT's Day 2025</title>
-      <link rel="shortcut icon" href="/Public/Asset/Img/LOGO ITS DAY (ONLY IT).png" type="image/x-icon">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Tailwind Custom Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#FFFFFF',
-            secondary: '#2563eb',
-            neutral: '#f9fafb',
-          },
-          dropShadow: {
-            glow: '0 0 12px rgba(37,99,235,0.7)',
-          },
-          animation: {
-            fadeIn: "fadeIn 1.5s ease-in-out",
-            slideUp: "slideUp 1s ease-out",
-          },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: 0 },
-              '100%': { opacity: 1 },
+    <!-- Tailwind Custom Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FFFFFF",
+              secondary: "#2563eb",
+              neutral: "#f9fafb",
             },
-            slideUp: {
-              '0%': { transform: 'translateY(50px)', opacity: 0 },
-              '100%': { transform: 'translateY(0)', opacity: 1 },
+            dropShadow: {
+              glow: "0 0 12px rgba(37,99,235,0.7)",
+            },
+            animation: {
+              fadeIn: "fadeIn 1.5s ease-in-out",
+              slideUp: "slideUp 1s ease-out",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: 0 },
+                "100%": { opacity: 1 },
+              },
+              slideUp: {
+                "0%": { transform: "translateY(50px)", opacity: 0 },
+                "100%": { transform: "translateY(0)", opacity: 1 },
+              },
             },
           },
         },
-      },
-    }
-  </script>
+      };
+    </script>
 
-  <!-- AOS Animate on Scroll -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- AOS Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-    .bg-noise {
-      background-image: url('https://transparenttextures.com/patterns/white-wall-3.png');
-    }
-  </style>
-</head>
-
-<body class="bg-neutral text-secondary scroll-smooth relative z-10">
-  <!-- Navbar -->
-<header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
-  <div class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center animate-slideUp">
-    <a href="/" class="text-xl font-bold text-secondary drop-shadow-glow">
-      <img src="/Public/Asset/Img/LOGO ITS DAY PNG.png" alt="Logo ITS Day" class="h-16 w-auto">
-    </a>
-    <nav class="space-x-6 text-sm font-medium">
-      <a href="#tentang" class="hover:text-secondary transition-all">Tentang</a>
-      <a href="#events" class="hover:text-secondary transition-all">Events</a>
-      <a href="#kontak" class="hover:text-secondary transition-all">Kontak</a>
-    </nav>
-  </div>
-</header>
-
-
-  <!-- Hero Section -->
-  <!-- Section dengan background gambar -->
-<section class="relative h-screen flex items-center justify-center text-center pt-20 overflow-hidden" id="home">
-  <!-- Gambar Background -->
-  <div class="absolute inset-0 z-0 opacity-80">
-    <div class="w-full h-full bg-[url('/Public/Asset/Img/pp.jpg')] bg-cover bg-center">
-      <!-- Tambahan gradient dari transparan ke putih -->
-      <div class="absolute bottom-0 w-full h-80 bg-gradient-to-b from-transparent to-white"></div>
-    </div>
-  </div>
-
-  <!-- Konten -->
-  <div class="relative z-10 text-secondary" data-aos="fade-up">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-glow animate-fadeIn">Welcome to IT's Day 2025</h2>
-    <p class="mb-6 text-secondary/80 animate-slideUp">Workshop • Lomba • Talkshow • Sertifikasi • IT Exhibition</p>
-    <a href="#events" target="_blank" 
-       class="bg-secondary text-primary px-6 py-3 rounded-full font-semibold shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105 animate-slideUp">
-      Daftar Sekarang
-    </a>
-  </div>
-</section>
-
-
-  <!-- Tentang Section -->
-  <section id="tentang" class="py-24" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="bg-white rounded-xl p-10 shadow-xl border-l-4 border-blue-500 animate-fadeIn">
-        <h3 class="text-3xl font-semibold mb-4 text-secondary drop-shadow-glow">Tentang IT's Day</h3>
-        <p class="text-gray-600 leading-relaxed">
-          IT’s Day adalah festival teknologi tahunan dari HIMATIF dan HME, menghadirkan workshop, sertifikasi, kompetisi, dan pameran teknologi. Sejak 2024, IT’s Day menjadi jembatan antara dunia kampus dan industri.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Countdown Section -->
-<section id="countdown" class="relative py-24 text-secondary bg-noise overflow-hidden" data-aos="fade-up">
-  <!-- Background Image with Gradient -->
-  <div class="absolute inset-0 z-0">
-    <div class="w-full h-full bg-[url('/Public/Asset/Img/pp.jpg')] bg-cover bg-center">
-      <div class="w-full h-full bg-gradient-to-t from-primary/90 via-primary/60 to-transparent"></div>
-    </div>
-  </div>
-
-  <!-- Content -->
-  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-    <h3 class="text-3xl font-semibold mb-4 drop-shadow-glow">Countdown to IT's Day 2025</h3>
-    <p class="text-secondary/80 mb-6">The event starts on <strong>8th of June 2025!</strong></p>
-    <div id="countdown-timer" class="text-4xl font-bold flex justify-center gap-8 animate-slideUp">
-      <div><span id="days">0</span><div class="text-sm">Hari</div></div>
-      <div><span id="hours">0</span><div class="text-sm">Jam</div></div>
-      <div><span id="minutes">0</span><div class="text-sm">Menit</div></div>
-      <div><span id="seconds">0</span><div class="text-sm">Detik</div></div>
-    </div>
-  </div>
-</section>
-
-
-  <script>
-    const countdownDate = new Date("June 8, 2025 00:00:00").getTime();
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = countdownDate - now;
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("days").textContent = days;
-      document.getElementById("hours").textContent = hours;
-      document.getElementById("minutes").textContent = minutes;
-      document.getElementById("seconds").textContent = seconds;
-      if (distance < 0) {
-        clearInterval(countdownInterval);
-        document.getElementById("countdown-timer").innerHTML = "Acara telah dimulai!";
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
       }
-    }
-    const countdownInterval = setInterval(updateCountdown, 1000);
-    updateCountdown();
-  </script>
+      .bg-noise {
+        background-image: url("https://transparenttextures.com/patterns/white-wall-3.png");
+      }
+    </style>
+  </head>
 
-  <!-- events Section -->
-  <section id="events" class="py-24 bg-secondary text-primary bg-noise" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto px-4">
-      <h3 class="text-3xl font-semibold text-center mb-12 drop-shadow-glow">Our Events</h3>
-      <div class="overflow-x-hidden">
-          <div
-            id="carousel"
-            class="flex items-stretch gap-6 px-4 py-6 transition-transform duration-700 ease-in-out w-max"
+  <body class="bg-neutral text-secondary scroll-smooth relative z-10">
+    <!-- Navbar -->
+    <header
+      id="main-header"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300 text-secondary"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center animate-slideUp"
+      >
+        <a href="/" class="text-xl font-bold drop-shadow-glow">
+          <img
+            src="/Public/Asset/Img/LOGO ITS DAY PNG.png"
+            alt="Logo ITS Day"
+            class="h-16 w-auto"
+          />
+        </a>
+        <nav class="space-x-6 text-sm font-bold">
+          <a href="#tentang" class="hover:text-primary transition-all"
+            >Tentang</a
           >
-            <!-- Item Carousel -->
-            <a
-              href="event1.html"
-              class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center"
-            >
-              <img
-                src="assets/event1-thumbnail.jpg"
-                alt="Event 1"
-                class="rounded-lg mb-4 w-full h-40 object-cover"
-              />
-              <h4
-                class="text-xl font-semibold text-secondary drop-shadow-glow mb-2"
-              >
-                Lomba Website UMKM
-              </h4>
-              <p class="text-gray-300 text-sm">Deskripsi singkat event 1.</p>
-            </a>
-            <a
-              href="event2.html"
-              class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center"
-            >
-              <img
-                src="assets/event2-thumbnail.jpg"
-                alt="Event 2"
-                class="rounded-lg mb-4 w-full h-40 object-cover"
-              />
-              <h4
-                class="text-xl font-semibold text-secondary drop-shadow-glow mb-2"
-              >
-                Lomba Rancang Bangun IoT
-              </h4>
-              <p class="text-gray-300 text-sm">Deskripsi singkat event 2.</p>
-            </a>
-            <a
-              href="event3.html"
-              class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center"
-            >
-              <img
-                src="assets/event3-thumbnail.jpg"
-                alt="Event 3"
-                class="rounded-lg mb-4 w-full h-40 object-cover"
-              />
-              <h4
-                class="text-xl font-semibold text-secondary drop-shadow-glow mb-2"
-              >
-                Workshop
-              </h4>
-              <p class="text-gray-300 text-sm">Deskripsi singkat event 3.</p>
-            </a>
-            <a
-              href="event4.html"
-              class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center"
-            >
-              <img
-                src="assets/event4-thumbnail.jpg"
-                alt="Event 4"
-                class="rounded-lg mb-4 w-full h-40 object-cover"
-              />
-              <h4
-                class="text-xl font-semibold text-secondary drop-shadow-glow mb-2"
-              >
-                Talkshow
-              </h4>
-              <p class="text-gray-300 text-sm">Deskripsi singkat event 4.</p>
-            </a>
-            <a
-              href="event5.html"
-              class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 shrink-0 px-2 group bg-white/30 backdrop-blur-lg p-6 rounded-2xl border border-white/20 transition hover:scale-105 shadow-lg flex flex-col items-center"
-            >
-              <img
-                src="assets/event5-thumbnail.jpg"
-                alt="Event 5"
-                class="rounded-lg mb-4 w-full h-40 object-cover"
-              />
-              <h4
-                class="text-xl font-semibold text-secondary drop-shadow-glow mb-2"
-              >
-                IT Exhibition
-              </h4>
-              <p class="text-gray-300 text-sm">Deskripsi singkat event 5.</p>
-            </a>
-            <!-- Tambahkan item lain sama persis -->
+          <a href="#events" class="hover:text-primary transition-all"
+            >Events</a
+          >
+          <a href="#kontak" class="hover:text-primary transition-all"
+            >Kontak</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Section dengan background gambar -->
+    <section
+      class="relative h-screen flex items-center justify-center text-center pt-20 overflow-hidden"
+      id="home"
+    >
+      <!-- Gambar Background -->
+      <div class="absolute inset-0 z-0 opacity-80">
+        <div
+          class="w-full h-full bg-[url('/Public/Asset/Img/pp.png')] bg-cover bg-center"
+        >
+          <!-- Tambahan gradient dari transparan ke putih -->
+          <div
+            class="absolute bottom-0 w-full h-80 bg-gradient-to-b from-transparent to-white"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Konten -->
+      <div class="relative z-10 text-center text-white" data-aos="fade-up">
+        <!-- Logo -->
+        <img
+          class="w-1/2 lg:w-1/4 mx-auto mb-4 drop-shadow-[0_0_20px_rgba(255,255,255,0.8)] animate-fadeIn"
+          src="Public/Asset/Img/LOGO ITS DAY (ONLY IT).png"
+          alt="Logo IT's Day"
+        />
+      
+        <!-- Judul -->
+        <h2
+          class="text-secondary text-4xl md:text-5xl font-bold mb-4 drop-shadow-[0_0_20px_rgba(255,255,255,0.9)] animate-fadeIn"
+        >
+          Welcome to IT's Day 2025
+        </h2>
+      
+        <!-- Subjudul -->
+        <p
+          class="mb-6 text-secondary drop-shadow-[0_0_12px_rgba(255,255,255,0.8)] animate-slideUp"
+        >
+        Explore your Mind, Express with Tech
+        </p>
+      
+        <!-- Tombol -->
+        <a
+          href="#events"
+          target="_blank"
+          class="bg-secondary text-primary px-6 py-3 rounded-full font-semibold shadow-md hover:bg-primary hover:text-secondary transition-transform transform hover:scale-105 animate-slideUp"
+        >
+          Daftar Sekarang
+        </a>
+      </div>
+      
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="py-24" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto px-4">
+        <div
+          class="bg-white rounded-xl p-10 shadow-xl border-l-4 border-blue-500 animate-fadeIn"
+        >
+          <h3
+            class="text-3xl font-semibold mb-4 text-secondary drop-shadow-glow"
+          >
+            Tentang IT's Day
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            IT’s Day adalah festival teknologi tahunan dari HIMATIF dan HME,
+            menghadirkan workshop, sertifikasi, kompetisi, dan pameran
+            teknologi. Sejak 2024, IT’s Day menjadi jembatan antara dunia kampus
+            dan industri.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section
+      id="countdown"
+      class="relative py-24 text-secondary bg-noise overflow-hidden"
+      data-aos="fade-up"
+    >
+      <!-- Background Image with Gradient -->
+      <div class="absolute inset-0 z-0">
+        <div
+          class="w-full h-full bg-[url('/Public/Asset/Img/pp.jpg')] bg-cover bg-center"
+        >
+          <div
+            class="w-full h-full bg-gradient-to-t from-primary/90 via-primary/60 to-transparent"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-4 drop-shadow-glow">
+          Countdown to IT's Day 2025
+        </h3>
+        <p class="text-secondary/80 mb-6">
+          The event starts on <strong>8th of June 2025!</strong>
+        </p>
+        <div
+          id="countdown-timer"
+          class="text-4xl font-bold flex justify-center gap-8 animate-slideUp"
+        >
+          <div>
+            <span id="days">0</span>
+            <div class="text-sm">Hari</div>
+          </div>
+          <div>
+            <span id="hours">0</span>
+            <div class="text-sm">Jam</div>
+          </div>
+          <div>
+            <span id="minutes">0</span>
+            <div class="text-sm">Menit</div>
+          </div>
+          <div>
+            <span id="seconds">0</span>
+            <div class="text-sm">Detik</div>
           </div>
         </div>
-        <div class="flex justify-center mt-6">
+      </div>
+    </section>
+
+    <script>
+      const countdownDate = new Date("June 8, 2025 00:00:00").getTime();
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+        if (distance < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("countdown-timer").innerHTML =
+            "Acara telah dimulai!";
+        }
+      }
+      const countdownInterval = setInterval(updateCountdown, 1000);
+      updateCountdown();
+    </script>
+
+    <!-- events Section -->
+    <section
+      id="events"
+      class="py-24 bg-secondary text-primary bg-noise"
+      data-aos="fade-up"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <h3 class="text-3xl font-semibold text-center mb-12 drop-shadow-glow">
+          Our Events
+        </h3>
+        <!-- Carousel Container -->
+        <div id="carousel" class="flex w-full overflow-hidden">
+          <div class="carousel-track flex gap-6 transition-transform duration-700 ease-in-out">
+            <!-- CARD 1 -->
+            <div class="w-full flex gap-6">
+              <!-- CARDS 1 -->
+              <a
+                href="#"
+                class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+              >
+                <img
+                  src="Public/Asset/Img/WEB DESIGN COVER.jpg"
+                  class="w-full h-[250px] object-cover"
+                />
+                <div class="p-4 text-white">
+                  <h4 class="text-lg font-semibold">Lomba Website UMKM</h4>
+                  <p class="text-sm">Deskripsi singkat event 1.</p>
+                </div>
+              </a>
+              <!--CARDS 2-->
+              <a
+                href="#"
+                class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+              >
+                <img
+                  src="Public/Asset/Img/IOT COVER.jpg"
+                  class="w-full h-[250px] object-cover"
+                />
+                <div class="p-4 text-white">
+                  <h4 class="text-lg font-semibold">
+                    Lomba Rancang Bangun IOT
+                  </h4>
+                  <p class="text-sm">Deskripsi singkat event 1.</p>
+                </div>
+                 <!--CARDS 3-->
+              <a
+              href="#"
+              class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+            >
+              <img
+                src="Public/Asset/Img/WORKSHOP COVER.jpg"
+                class="w-full h-[250px] object-cover"
+              />
+              <div class="p-4 text-white">
+                <h4 class="text-lg font-semibold">
+                  Workshop
+                </h4>
+                <p class="text-sm">Deskripsi singkat event 1.</p>
+              </div>
+               <!--CARDS 4-->
+               <a
+               href="#"
+               class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+             >
+               <img
+                 src="Public/Asset/Img/TALKSHOW COVER.jpg"
+                 class="w-full h-[250px] object-cover"
+               />
+               <div class="p-4 text-white">
+                 <h4 class="text-lg font-semibold">
+                   Talkshow
+                 </h4>
+                 <p class="text-sm">Deskripsi singkat event 1.</p>
+               </div>
+                <!--CARDS 5-->
+              <a
+              href="#"
+              class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+            >
+              <img
+                src="Public/Asset/Img/PAMERAN COVER.jpg"
+                class="w-full h-[250px] object-cover"
+              />
+              <div class="p-4 text-white">
+                <h4 class="text-lg font-semibold">
+                  Pameran
+                </h4>
+                <p class="text-sm">Deskripsi singkat event 1.</p>
+              </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prev/Next Buttons -->
+        <div class="flex justify-center gap-4 mt-4">
           <button
             id="prev"
-            class="bg-primary text-secondary px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105"
+            class="px-4 py-2 bg-white text-blue-600 rounded-full"
           >
             Prev
           </button>
           <button
             id="next"
-            class="bg-primary text-secondary px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105 ml-4"
+            class="px-4 py-2 bg-white text-blue-600 rounded-full"
           >
             Next
           </button>
         </div>
       </div>
-  </section>
+    </section>
 
-  <script>
-    const carousel = document.getElementById('carousel');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    let index = 0;
-    const totalCards = 5;
+    <script>
+      const carousel = document.getElementById("carousel").firstElementChild;
+      const prevButton = document.getElementById("prev");
+      const nextButton = document.getElementById("next");
 
-    function updateCarousel() {
-      carousel.style.transform = `translateX(-${index * (200 / totalCards)}%)`;
-    }
+      let index = 0;
+      const totalCards = 3;
+      const cardWidth = 400 + 24; // card + gap
 
-    prevButton.addEventListener('click', () => {
-      index = (index - 1 + totalCards) % totalCards;
-      updateCarousel();
-    });
-
-    nextButton.addEventListener('click', () => {
-      index = (index + 1) % totalCards;
-      updateCarousel();
-    });
-  </script>
-
-  <!-- Kontak Section -->
-  <section id="kontak" class="py-24 bg-neutral" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold mb-4 text-secondary drop-shadow-glow">Kontak & Sponsor</h3>
-      <p class="text-secondary/80 mb-6">Hubungi kami via <strong><a href="https://www.instagram.com/itsday.official/" target="_blank" class="text-blue-500 hover:underline">@itsday.official</a></strong> atau email <strong>itsday@himpunan.ac.id</strong></p>
-      <div class="flex justify-center gap-8 mt-8 animate-slideUp">
-        <img src="assets/logo-sponsor1.png" alt="Sponsor 1" class="h-12">
-        <img src="assets/logo-sponsor2.png" alt="Sponsor 2" class="h-12">
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center py-6 bg-secondary text-primary text-sm">© 2025 IT's Day. All rights reserved.</footer>
-
-  <!-- AOS Init -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000, once: true });</script>
-  
-  <!-- Scroll to Top Button -->
-  <button id="scrollToTop" class="fixed bottom-4 right-4 bg-secondary text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105 hidden">
-    ↑ 
-  </button>
-  <script>
-    const scrollToTopButton = document.getElementById('scrollToTop');
-    window.onscroll = function() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        scrollToTopButton.classList.remove('hidden');
-      } else {
-        scrollToTopButton.classList.add('hidden');
+      function updateCarousel() {
+        carousel.style.transform = `translateX(-${index * cardWidth}px)`;
       }
-    };
-    scrollToTopButton.onclick = function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-  </script>
-  <!-- Smooth Scroll -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
+
+      prevButton.addEventListener("click", () => {
+        index = (index - 1 + totalCards) % totalCards;
+        updateCarousel();
+      });
+
+      nextButton.addEventListener("click", () => {
+        index = (index + 1) % totalCards;
+        updateCarousel();
+      });
+    </script>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-24 bg-neutral" data-aos="fade-up">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-semibold mb-4 text-secondary drop-shadow-glow">
+          Kontak & Sponsor
+        </h3>
+        <p class="text-secondary/80 mb-6">
+          Hubungi kami via
+          <strong
+            ><a
+              href="https://www.instagram.com/itsday.official/"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+              >@itsday.official</a
+            ></strong
+          >
+          atau email <strong>itsday@himpunan.ac.id</strong>
+        </p>
+        <div class="flex justify-center gap-8 mt-8 animate-slideUp">
+          <img src="assets/logo-sponsor1.png" alt="Sponsor 1" class="h-12" />
+          <img src="assets/logo-sponsor2.png" alt="Sponsor 2" class="h-12" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-secondary text-primary text-sm">
+      © 2025 IT's Day. All rights reserved.
+    </footer>
+
+    <!-- AOS Init -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTop"
+      class="fixed bottom-4 right-4 bg-secondary text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105 hidden"
+    >
+      ↑
+    </button>
+    <script>
+      const scrollToTopButton = document.getElementById("scrollToTop");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          scrollToTopButton.classList.remove("hidden");
+        } else {
+          scrollToTopButton.classList.add("hidden");
+        }
+      };
+      scrollToTopButton.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+    </script>
+    <!-- Smooth Scroll -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
         });
       });
-    });
-  </script>
-<script>
-  window.addEventListener('scroll', function () {
-    const header = document.getElementById('main-header');
-    if (window.scrollY > 10) {
-      header.classList.add('bg-white/75', 'shadow-md');
-    } else {
-      header.classList.remove('bg-white/75', 'shadow-md');
-    }
-  });
-</script>
-
-
-
-
-</body>
-
+    </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("main-header");
+        if (window.scrollY > 10) {
+          header.classList.add("bg-white/75", "shadow-md");
+          header.classList.remove("text-white");
+          header.classList.add("text-blue-600"); // Ganti dengan warna sesuai palet Tailwind kamu
+        } else {
+          header.classList.remove("bg-white/75", "shadow-md");
+          header.classList.remove("text-blue-600");
+          header.classList.add("text-white");
+        }
+      });
+    </script>
+  </body>
 </html>
