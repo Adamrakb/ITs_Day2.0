@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT's Day 2025</title>
-    <link
-      rel="shortcut icon"
-      href="/Public/Asset/Img/LOGO ITS DAY (ONLY IT).png"
-      type="image/x-icon"
-    />
+  <link rel="shortcut icon" href="Public/Asset/Img/LOGO ITS DAY (ONLY IT).png" type="image">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-...isi-integrity..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,7 +24,7 @@
             colors: {
               primary: "#FFFFFF",
               secondary: "#2563eb",
-              neutral: "#f9fafb",
+              third: "#0e1a1f",
             },
             dropShadow: {
               glow: "0 0 12px rgba(37,99,235,0.7)",
@@ -143,8 +146,7 @@
         >
           Daftar Sekarang
         </a>
-      </div>
-      
+      </div>      
     </section>
 
     <!-- Tentang Section -->
@@ -177,16 +179,16 @@
       <!-- Background Image with Gradient -->
       <div class="absolute inset-0 z-0">
         <div
-          class="w-full h-full bg-[url('/Public/Asset/Img/pp.jpg')] bg-cover bg-center"
+          class="w-full h-full bg-[url('/Public/Asset/Img/pp2.png')] bg-cover bg-center"
         >
           <div
-            class="w-full h-full bg-gradient-to-t from-primary/90 via-primary/60 to-transparent"
+            class="w-full h-full bg-gradient-to-b from-primary/90 via-primary/60 to-transparent"
           ></div>
         </div>
       </div>
 
       <!-- Content -->
-      <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+      <div class="relative z-10 max-w-4xl mx-auto px-4 text-center pb-16">
         <h3 class="text-3xl font-semibold mb-4 drop-shadow-glow">
           Countdown to IT's Day 2025
         </h3>
@@ -259,7 +261,7 @@
             <div class="w-full flex gap-6">
               <!-- CARDS 1 -->
               <a
-                href="#"
+                href="event1.html"
                 class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
               >
                 <img
@@ -378,35 +380,88 @@
       });
     </script>
 
-    <!-- Kontak Section -->
-    <section id="kontak" class="py-24 bg-neutral" data-aos="fade-up">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <h3 class="text-3xl font-semibold mb-4 text-secondary drop-shadow-glow">
-          Kontak & Sponsor
-        </h3>
-        <p class="text-secondary/80 mb-6">
-          Hubungi kami via
-          <strong
-            ><a
-              href="https://www.instagram.com/itsday.official/"
-              target="_blank"
-              class="text-blue-500 hover:underline"
-              >@itsday.official</a
-            ></strong
-          >
-          atau email <strong>itsday@himpunan.ac.id</strong>
-        </p>
-        <div class="flex justify-center gap-8 mt-8 animate-slideUp">
-          <img src="assets/logo-sponsor1.png" alt="Sponsor 1" class="h-12" />
-          <img src="assets/logo-sponsor2.png" alt="Sponsor 2" class="h-12" />
+    <!-- Kontak & Sponsor Section -->
+<section id="kontak" class="py-24 bg-white text-secondary" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h3 class="text-3xl font-semibold mb-4 drop-shadow-glow">
+      Kontak & Sponsor
+    </h3>
+    <p class="text-secondary/80 mb-6">
+      Hubungi kami via
+      <strong>
+        <a href="https://www.instagram.com/itsday.official/" target="_blank" class="text-blue-500 hover:underline">
+          @itsday.official
+        </a>
+      </strong>
+      atau email <strong>itsday@jgu.ac.id</strong>
+    </p>
+    <div class="flex justify-center gap-8 mt-8 animate-slideUp">
+      <img src="assets/logo-sponsor1.png" alt="Sponsor 1" class="h-12" />
+      <img src="assets/logo-sponsor2.png" alt="Sponsor 2" class="h-12" />
+    </div>
+  </div>
+</section>
+
+<!-- Custom Footer -->
+<footer class="bg-blue-950 text-primary text-sm py-12">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <!-- About -->
+    <div>
+      <h4 class="font-bold mb-4 text-white">TAGLINE</h4>
+      <p class="text-primary/90">
+        IT's Day adalah event tahunan teknologi dari JGU yang mempertemukan para antusias teknologi untuk berinovasi, berkompetisi, dan berkolaborasi.
+      </p>
+      <div class="flex space-x-4 mt-4 justify-center">
+        <img src="Public/Asset/Img/logo-jgu (1).png" alt="Presented By JGU" class="h-11 bg-white p-1" />
+        <img src="Public/Asset/Img/Logo HIMATIF (1).png" alt="Presented By HIMAITF" class="h-12" />
+        <img src="assets/logo3.png" alt="Presented By HME" class="h-8" />
+      </div>
+    </div>
+
+    <!-- Events -->
+    <div>
+      <h4 class="font-bold mb-4 text-white">EVENTS</h4>
+      <ul class="space-y-2 text-primary/90">
+        <li><a href="#" class="hover:underline">Workshop</a></li>
+        <li><a href="#" class="hover:underline">Talkshow</a></li>
+        <li><a href="#" class="hover:underline">Pameran Booth</a></li>
+      </ul>
+    </div>
+
+    <!-- Competitions -->
+    <div>
+      <h4 class="font-bold mb-4 text-white">COMPETITIONS</h4>
+      <ul class="space-y-2 text-primary/90">
+        <li><a href="#" class="hover:underline">Web Design UMKM</a></li>
+        <li><a href="#" class="hover:underline">Rancang Bangun IOT</a></li>
+      </ul>
+    </div>
+
+    <!-- Social & Contact -->
+    <div>
+      <h4 class="font-bold mb-4 text-white">KONTAK KAMI</h4>
+      <ul class="text-primary/90 space-y-2">
+        <li>Email: itsday@jgu.ac.id</li>
+        <li>Phone: +6281234567890</li>
+      </ul>
+      <div class="flex space-x-4 mt-4">
+        <!-- Ganti icon dengan SVG atau FontAwesome jika dibutuhkan -->
+        <div class="flex space-x-4 mt-4 text-white text-xl">
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-line"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="text-center py-6 bg-secondary text-primary text-sm">
-      © 2025 IT's Day. All rights reserved.
-    </footer>
+  <div class="text-center mt-10 text-primary/80">
+    © 2025 IT's Day. All rights reserved.
+  </div>
+</footer>
+
 
     <!-- AOS Init -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
@@ -453,14 +508,15 @@
         const header = document.getElementById("main-header");
         if (window.scrollY > 10) {
           header.classList.add("bg-white/75", "shadow-md");
-          header.classList.remove("text-white");
+          header.classList.remove("text-secondary");
           header.classList.add("text-blue-600"); // Ganti dengan warna sesuai palet Tailwind kamu
         } else {
           header.classList.remove("bg-white/75", "shadow-md");
           header.classList.remove("text-blue-600");
-          header.classList.add("text-white");
+          header.classList.add("text-secondary");
         }
       });
     </script>
+    
   </body>
 </html>
