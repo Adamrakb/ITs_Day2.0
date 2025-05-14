@@ -84,13 +84,13 @@
           />
         </a>
         <nav class="space-x-6 text-sm font-bold">
-          <a href="#tentang" class="hover:text-primary transition-all"
+          <a href="#tentang" class="hover:text-third transition-all"
             >Tentang</a
           >
-          <a href="#events" class="hover:text-primary transition-all"
+          <a href="#events" class="hover:text-third transition-all"
             >Events</a
           >
-          <a href="#kontak" class="hover:text-primary transition-all"
+          <a href="#kontak" class="hover:text-third transition-all"
             >Kontak</a
           >
         </nav>
@@ -205,7 +205,7 @@
           Countdown to IT's Day 2025
         </h1>
         <p class="text-secondary/150 mb-6">
-          The event starts on <strong>8th of June 2025!</strong>
+          The event starts on <strong>18th of June 2025!</strong>
         </p>
         <div
   id="countdown-timer"
@@ -233,7 +233,7 @@
     </section>
 
     <script>
-      const countdownDate = new Date("June 8, 2025 00:00:00").getTime();
+      const countdownDate = new Date("June 18, 2025 00:00:00").getTime();
       function updateCountdown() {
         const now = new Date().getTime();
         const distance = countdownDate - now;
@@ -268,14 +268,15 @@
           Our Events
         </h3>
         <!-- Carousel Container -->
-        <div id="carousel" class="flex w-full overflow-hidden p-2">
+        <div id="carousel" class="flex w-full overflow-x-auto sm:overflow-hidden p-2">
           <div class="carousel-track flex gap-6 transition-transform duration-700 ease-in-out">
             <!-- CARD 1 -->
             <div class="w-full flex gap-4">
               <!-- CARDS 1 -->
               <a
                 href="event1.html"
-                class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+                class="min-w-[280px] sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px]
+                shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
               >
                 <img
                   src="Public/Asset/Img/WEB DESIGN COVER.jpg"
@@ -289,7 +290,8 @@
               <!--CARDS 2-->
               <a
                 href="event2.html"
-                class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+                class="min-w-[280px] sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px]
+                shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
               >
                 <img
                   src="Public/Asset/Img/IOT COVER.jpg"
@@ -304,7 +306,8 @@
                  <!--CARDS 3-->
               <a
               href="coming_soon.html"
-              class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+              class="min-w-[280px] sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px]
+              shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
             >
               <img
                 src="Public/Asset/Img/WORKSHOP COVER.jpg"
@@ -319,7 +322,8 @@
                <!--CARDS 4-->
                <a
                href="coming_soon.html"
-               class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+               class="min-w-[280px] sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px]
+               shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
              >
                <img
                  src="Public/Asset/Img/TALKSHOW COVER.jpg"
@@ -334,7 +338,8 @@
                 <!--CARDS 5-->
               <a
               href="coming_soon.html"
-              class="min-w-[400px] shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
+              class="min-w-[280px] sm:min-w-[300px] md:min-w-[350px] lg:min-w-[400px]
+              shrink-0 rounded-2xl overflow-hidden bg-white/20 backdrop-blur shadow-lg transition hover:scale-105"
             >
               <img
                 src="Public/Asset/Img/PAMERAN COVER.jpg"
@@ -352,7 +357,7 @@
         </div>
 
         <!-- Prev/Next Buttons -->
-        <div class="flex justify-center gap-4 mt-4">
+        <div class="justify-center gap-4 mt-4 hidden sm:flex">
           <button
             id="prev"
             class="px-4 py-2 bg-white text-blue-600 rounded-full hover:bg-third hover:text-primary"
@@ -365,7 +370,7 @@
           >
             Next
           </button>
-        </div>
+        </div>        
       </div>
     </section>
 
@@ -422,11 +427,11 @@
     </div>
     <!-- Maskot Kanan Atas -->
 <img src="Public/Asset/Img/maskot(2).png" alt="Maskot Kanan"
-class="absolute -top-20 -right-10 w-28 rotate-[12deg] z-0" />
+class="absolute -top-24 right-5 lg:-right-10 w-28 rotate-[12deg] z-0" />
   </div>
 <!-- Maskot Image -->
 <img src="Public/Asset/Img/maskot(1).png" alt="Maskot ITS Day"
-     class="absolute -bottom-16 left-10 w-32 rotate-[-12deg] z-0" />
+     class="absolute -bottom-20 lg:-bottom-16 left-5 lg:left-10 w-28 rotate-[-12deg] z-0" />
 </section>
 
 
