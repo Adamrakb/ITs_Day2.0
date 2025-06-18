@@ -30,7 +30,7 @@
     
 
 
-      const countdownDate = new Date("June 18, 2025 00:00:00").getTime();
+      const countdownDate = new Date("June 19, 2025 00:00:00").getTime();
       function updateCountdown() {
         const now = new Date().getTime();
         const distance = countdownDate - now;
