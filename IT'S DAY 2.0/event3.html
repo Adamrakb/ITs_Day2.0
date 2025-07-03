@@ -1,345 +1,423 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seminar - IT's Day 2025</title>
+    <link
+      rel="shortcut icon"
+      href="Public/Asset/Img/LOGO ITS DAY (ONLY IT).png"
+      type="image"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Workshop - IT's Day 2025</title>
-  <link rel="shortcut icon" href="Public/Asset/Img/LOGO ITS DAY (ONLY IT).png" type="image">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-
- <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Tailwind Custom Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#FFFFFF',
-            secondary: '#2563eb',
-            third: '#1e3371',
-          },
-          dropShadow: {
-            glow: '0 0 12px rgba(37,99,235,0.7)',
-          },
-          animation: {
-            fadeIn: "fadeIn 1.5s ease-in-out",
-            slideUp: "slideUp 1s ease-out",
-          },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: 0 },
-              '100%': { opacity: 1 },
+    <!-- Tailwind Custom Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FFFFFF",
+              secondary: "#2563eb",
+              third: "#1e3371",
             },
-            slideUp: {
-              '0%': { transform: 'translateY(50px)', opacity: 0 },
-              '100%': { transform: 'translateY(0)', opacity: 1 },
+            dropShadow: {
+              glow: "0 0 12px rgba(37,99,235,0.7)",
+            },
+            animation: {
+              fadeIn: "fadeIn 1.5s ease-in-out",
+              slideUp: "slideUp 1s ease-out",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: 0 },
+                "100%": { opacity: 1 },
+              },
+              slideUp: {
+                "0%": { transform: "translateY(50px)", opacity: 0 },
+                "100%": { transform: "translateY(0)", opacity: 1 },
+              },
             },
           },
         },
-      },
-    }
-  </script>
+      };
+    </script>
 
-  <style>
-    .container-eg-btn-4 {
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto 10px;
-    padding: .5em;
-    line-height: normal;
-}
-.container-eg-btn-4 .button {
-    background: #af40ff;
-    margin: 15px;
-    padding: 18px 22px;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    transition: .3s;
-    z-index: 1;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 12px;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-weight: 700;
-}
-.container-eg-btn-4 .button-1 {
-    background-color: initial;
-}
-.container-eg-btn-4 .button-1:before {
-    border-radius: 12px;
-}
-.container-eg-btn-4 .button-1:after {
-    border-radius: 10px;
-}
-.container-eg-btn-4 .button-1:before {
-    background-color: #7a00ff33;
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -2;
-}
-.container-eg-btn-4 .button-1:after {
-    background-color: initial;
-    background-image: linear-gradient(45deg, #ff6209 0, #6905d5 100%);
-    bottom: 4px;
-    content: "";
-    display: block;
-    left: 4px;
-    overflow: hidden;
-    position: absolute;
-    right: 4px;
-    top: 4px;
-    transition: all 100ms ease-out;
-    z-index: -1;
-}
-.container-eg-btn-4 .button-1:hover:after {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    transition-timing-function: ease-in;
-}
-.container-eg-btn-4 .button-1:active:after {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(45deg, #ff7426 0, #f93a13 100%);
-    bottom: 4px;
-    left: 4px;
-    right: 4px;
-    top: 4px;
-}
-.container-eg-btn-4 .button-2 {
-    background-size: 350% 100%;
-    background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
-}
-.container-eg-btn-4 .button-2:hover {
-    background-position: 100% 0;
-}
-.container-eg-btn-4 .button-3 {
-    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
-    background-size: 200% auto;
-}
-.container-eg-btn-4 .button-3:hover {
-    background-position: right center;
-    box-shadow: 0 4px 15px 0 #12d8fa;
-}
-.container-eg-btn-4 .button-4 {
-    background-image: linear-gradient(to right, #B24592 0%, #F15F79 51%, #B24592 100%);
-    background-size: 200% auto;
-}
-.container-eg-btn-4 .button-4:hover {
-    background-position: right center;
-    transform: translateY(-0.25em);
-    box-shadow: 0 10px 9px -3px #6f061961;
-}
-.container-eg-btn-4 .button-4:active {
-    transform: translateY(0);
-    box-shadow: unset;
-}
-.container-eg-btn-4 .button-5 {
-    background-image: linear-gradient(to right, #25aae1, #3B85FC);
-    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-    overflow: hidden;
-}
-.container-eg-btn-4 .button-5:hover:after {
-    top: auto;
-    bottom: 0;
-    height: 100%;
-}
-.container-eg-btn-4 .button-5:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 12px;
-    background-color: #060270;
-    background-image: linear-gradient(to right, #3B85FC, #060270);
-    transition: all 0.3s ease;
-}
-.container-eg-btn-4 .button-5:active{
-    box-shadow: unset;
-}
-.container-eg-btn-4 .button-6 {
-    background-image: linear-gradient(to right, #F7971E, #FFD200);
-    box-shadow: 0 4px 15px 0 #F7971E66;
-    overflow: hidden;
-}
-.container-eg-btn-4 .button-6:hover:after {
-    left: 0;
-    right: auto;
-    width: 100%;
-}
-.container-eg-btn-4 .button-6:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    border-radius: 12px;
-    background-color: #8BC34A;
-    background-image: linear-gradient(to right, #feb47b, #ff7e5f);
-    transition: all 0.3s ease;
-}
-.container-eg-btn-4 .button-6:active{
-    box-shadow: unset;
-}
-.container-eg-btn-4 .button-7{
-    background: #fff;
-    box-shadow: 0px 6px 16px 0px #8d7bb187;
-    overflow: hidden;
-}
-.container-eg-btn-4 .button-7:after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 12px;
-    background-color: #8BC34A;
-    transition: all 0.3s ease;
-    background-image: linear-gradient(to right, #70e1f5, #ffd194);
-}
-.container-eg-btn-4 .button-7:hover{
-    color: #5f6095;
-}
-.container-eg-btn-4 .button-7:hover:after{
-    height: 5px;
-}
-.container-eg-btn-4 .button-7:active{
-    box-shadow: 0px 4px 8px 0px #8d7bb187;
-}
-.container-eg-btn-4 .button-8:before {
-    content: '';
-    background: linear-gradient(225deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: 400%;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    transition: opacity .3s ease-in-out;
-    border-radius: 12px;
-}
-.container-eg-btn-4 .button-8:hover:before {
-    animation: glowing 20s linear infinite;
-}
-.container-eg-btn-4 .button-8:active:before {
-    background: #000137;
-}
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 400% 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-.container-eg-btn-4 .button-9 {
-    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-}
-.container-eg-btn-4 .button-9:after {
-    content: "";
-    position: absolute;
-    background-color: #000137;
-    border-radius: 8px;
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
-    top: 4px;
-    left: 4px;
-    z-index: -1;
-    transition: opacity .3s ease-in-out;
-}
-.container-eg-btn-4 .button-9:hover:after {
-    opacity: 0;
-}
-.container-eg-btn-4 .button-9:active:after {
-    opacity: 1;
-}
-.container-eg-btn-4 .button-10 {
-    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-}
-.container-eg-btn-4 .button-10:after {
-    content: "";
-    position: absolute;
-    background-color: #000137;
-    border-radius: 8px;
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
-    top: 4px;
-    left: 4px;
-    z-index: -1;
-    transition: opacity .3s ease-in-out;
-    opacity: 0;
-}
-.container-eg-btn-4 .button-10:hover:after {
-    opacity: 1;
-}
-.container-eg-btn-4 .button-10:active:after {
-    opacity: 0;
-}
-.container-eg-btn-4 .button-11:hover {
-    background-position: right center;
-    -webkit-background-clip: unset;
-    background-clip: unset;
-    -webkit-text-fill-color: unset;
-}
-.container-eg-btn-4 .button-11, .container-eg-btn-4 .button-11:active {
-    background-image: linear-gradient(to right, #16BFFD 0%, #CB3066 51%, #16BFFD 100%);
-    background-size: 200% auto;
-    box-shadow: 0px 6px 16px 0px #8d7bb187;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.container-eg-btn-4 .button-12:hover {
-    background-position: right center;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.container-eg-btn-4 .button-12 {
-    background-image: linear-gradient(to right, #16BFFD 0%, #CB3066 51%, #16BFFD 100%);
-    background-size: 200% auto;
-    box-shadow: 0px 6px 16px 0px #8d7bb187;
-}
-.container-eg-btn-4 .button-12:active {
-    -webkit-background-clip: unset;
-    background-clip: unset;
-    -webkit-text-fill-color: unset;
-}
-  </style>
-</head>
+    <style>
+      .container-eg-btn-4 {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto 10px;
+        padding: 0.5em;
+        line-height: normal;
+      }
+      .container-eg-btn-4 .button {
+        background: #af40ff;
+        margin: 15px;
+        padding: 18px 22px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        transition: 0.3s;
+        z-index: 1;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 12px;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-weight: 700;
+      }
+      .container-eg-btn-4 .button-1 {
+        background-color: initial;
+      }
+      .container-eg-btn-4 .button-1:before {
+        border-radius: 12px;
+      }
+      .container-eg-btn-4 .button-1:after {
+        border-radius: 10px;
+      }
+      .container-eg-btn-4 .button-1:before {
+        background-color: #7a00ff33;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+      }
+      .container-eg-btn-4 .button-1:after {
+        background-color: initial;
+        background-image: linear-gradient(45deg, #ff6209 0, #6905d5 100%);
+        bottom: 4px;
+        content: "";
+        display: block;
+        left: 4px;
+        overflow: hidden;
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        transition: all 100ms ease-out;
+        z-index: -1;
+      }
+      .container-eg-btn-4 .button-1:hover:after {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        transition-timing-function: ease-in;
+      }
+      .container-eg-btn-4 .button-1:active:after {
+        background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+          ),
+          linear-gradient(45deg, #ff7426 0, #f93a13 100%);
+        bottom: 4px;
+        left: 4px;
+        right: 4px;
+        top: 4px;
+      }
+      .container-eg-btn-4 .button-2 {
+        background-size: 350% 100%;
+        background-image: linear-gradient(
+          to right,
+          #009245,
+          #fcee21,
+          #00a8c5,
+          #d9e021
+        );
+      }
+      .container-eg-btn-4 .button-2:hover {
+        background-position: 100% 0;
+      }
+      .container-eg-btn-4 .button-3 {
+        background-image: linear-gradient(
+          to right,
+          #1fa2ff 0%,
+          #12d8fa 51%,
+          #1fa2ff 100%
+        );
+        background-size: 200% auto;
+      }
+      .container-eg-btn-4 .button-3:hover {
+        background-position: right center;
+        box-shadow: 0 4px 15px 0 #12d8fa;
+      }
+      .container-eg-btn-4 .button-4 {
+        background-image: linear-gradient(
+          to right,
+          #b24592 0%,
+          #f15f79 51%,
+          #b24592 100%
+        );
+        background-size: 200% auto;
+      }
+      .container-eg-btn-4 .button-4:hover {
+        background-position: right center;
+        transform: translateY(-0.25em);
+        box-shadow: 0 10px 9px -3px #6f061961;
+      }
+      .container-eg-btn-4 .button-4:active {
+        transform: translateY(0);
+        box-shadow: unset;
+      }
+      .container-eg-btn-4 .button-5 {
+        background-image: linear-gradient(to right, #25aae1, #3b85fc);
+        box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+        overflow: hidden;
+      }
+      .container-eg-btn-4 .button-5:hover:after {
+        top: auto;
+        bottom: 0;
+        height: 100%;
+      }
+      .container-eg-btn-4 .button-5:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 12px;
+        background-color: #060270;
+        background-image: linear-gradient(to right, #3b85fc, #060270);
+        transition: all 0.3s ease;
+      }
+      .container-eg-btn-4 .button-5:active {
+        box-shadow: unset;
+      }
+      .container-eg-btn-4 .button-6 {
+        background-image: linear-gradient(to right, #f7971e, #ffd200);
+        box-shadow: 0 4px 15px 0 #f7971e66;
+        overflow: hidden;
+      }
+      .container-eg-btn-4 .button-6:hover:after {
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+      .container-eg-btn-4 .button-6:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        border-radius: 12px;
+        background-color: #8bc34a;
+        background-image: linear-gradient(to right, #feb47b, #ff7e5f);
+        transition: all 0.3s ease;
+      }
+      .container-eg-btn-4 .button-6:active {
+        box-shadow: unset;
+      }
+      .container-eg-btn-4 .button-7 {
+        background: #fff;
+        box-shadow: 0px 6px 16px 0px #8d7bb187;
+        overflow: hidden;
+      }
+      .container-eg-btn-4 .button-7:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 12px;
+        background-color: #8bc34a;
+        transition: all 0.3s ease;
+        background-image: linear-gradient(to right, #70e1f5, #ffd194);
+      }
+      .container-eg-btn-4 .button-7:hover {
+        color: #5f6095;
+      }
+      .container-eg-btn-4 .button-7:hover:after {
+        height: 5px;
+      }
+      .container-eg-btn-4 .button-7:active {
+        box-shadow: 0px 4px 8px 0px #8d7bb187;
+      }
+      .container-eg-btn-4 .button-8:before {
+        content: "";
+        background: linear-gradient(
+          225deg,
+          #ff0000,
+          #ff7300,
+          #fffb00,
+          #48ff00,
+          #00ffd5,
+          #002bff,
+          #7a00ff,
+          #ff00c8,
+          #ff0000
+        );
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: 400%;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 12px;
+      }
+      .container-eg-btn-4 .button-8:hover:before {
+        animation: glowing 20s linear infinite;
+      }
+      .container-eg-btn-4 .button-8:active:before {
+        background: #000137;
+      }
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+      .container-eg-btn-4 .button-9 {
+        background-image: linear-gradient(
+          144deg,
+          #af40ff,
+          #5b42f3 50%,
+          #00ddeb
+        );
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      }
+      .container-eg-btn-4 .button-9:after {
+        content: "";
+        position: absolute;
+        background-color: #000137;
+        border-radius: 8px;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        top: 4px;
+        left: 4px;
+        z-index: -1;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .container-eg-btn-4 .button-9:hover:after {
+        opacity: 0;
+      }
+      .container-eg-btn-4 .button-9:active:after {
+        opacity: 1;
+      }
+      .container-eg-btn-4 .button-10 {
+        background-image: linear-gradient(
+          144deg,
+          #af40ff,
+          #5b42f3 50%,
+          #00ddeb
+        );
+        box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      }
+      .container-eg-btn-4 .button-10:after {
+        content: "";
+        position: absolute;
+        background-color: #000137;
+        border-radius: 8px;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        top: 4px;
+        left: 4px;
+        z-index: -1;
+        transition: opacity 0.3s ease-in-out;
+        opacity: 0;
+      }
+      .container-eg-btn-4 .button-10:hover:after {
+        opacity: 1;
+      }
+      .container-eg-btn-4 .button-10:active:after {
+        opacity: 0;
+      }
+      .container-eg-btn-4 .button-11:hover {
+        background-position: right center;
+        -webkit-background-clip: unset;
+        background-clip: unset;
+        -webkit-text-fill-color: unset;
+      }
+      .container-eg-btn-4 .button-11,
+      .container-eg-btn-4 .button-11:active {
+        background-image: linear-gradient(
+          to right,
+          #16bffd 0%,
+          #cb3066 51%,
+          #16bffd 100%
+        );
+        background-size: 200% auto;
+        box-shadow: 0px 6px 16px 0px #8d7bb187;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .container-eg-btn-4 .button-12:hover {
+        background-position: right center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .container-eg-btn-4 .button-12 {
+        background-image: linear-gradient(
+          to right,
+          #16bffd 0%,
+          #cb3066 51%,
+          #16bffd 100%
+        );
+        background-size: 200% auto;
+        box-shadow: 0px 6px 16px 0px #8d7bb187;
+      }
+      .container-eg-btn-4 .button-12:active {
+        -webkit-background-clip: unset;
+        background-clip: unset;
+        -webkit-text-fill-color: unset;
+      }
+    </style>
 
-<body class="bg-neutral text-secondary scroll-smooth relative z-10">
-  <!-- Navbar -->
-  <header class="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-md transition-all opacity-90">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center animate-slideUp">
+    <!-- AOS Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .bg-noise {
+        background-image: url("https://transparenttextures.com/patterns/white-wall-3.png");
+      }
+    </style>
+  </head>
+
+  <body class="bg-neutral text-secondary scroll-smooth relative z-10">
+    <!-- Navbar -->
+    <header
+      id="main-header"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center animate-slideUp"
+      >
         <a href="index.html" class="text-xl font-bold">
           <img
             src="/Public/Asset/Img/LOGO ITS DAY PNG.png"
@@ -347,46 +425,88 @@
             class="h-12 w-auto"
           />
         </a>
-      <nav class="space-x-6 text-sm font-medium">
-        <a href="index.html" class="hover:text-third transition-all">Beranda</a>
-         <a href="index.html#kontak" class="hover:text-third transition-all">Kontak Kami</a>
-      </nav>
-    </div>
-  </header>
+        <nav class="space-x-6 text-sm font-bold">
+          <a href="index.html" class="hover:text-third transition-all"
+            >Beranda</a
+          >
+          <a href="index.html#kontak" class="hover:text-third transition-all"
+            >Kontak Kami</a
+          >
+        </nav>
+      </div>
+    </header>
 
-  <!-- Event Details Section -->
-  <section class="py-24 bg-primary text-secondary bg-noise" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="bg-white rounded-xl p-10 shadow-xl border-l-4 border-blue-500 animate-fadeIn">
-        <h2 class="text-3xl font-semibold mb-4 text-secondary drop-shadow-glow">Workshop</h2>
-        <p class="text-gray-600 leading-relaxed mb-6">
-          Tingkatkan skill dan wawasanmu di dunia teknologi bersama para ahli di Workshop IT IT’s Day 2025! Workshop ini menghadirkan pembahasan mendalam seputar tren teknologi terkini seperti web development, kecerdasan buatan, dan Internet of Things. Cocok untuk pelajar, mahasiswa, maupun umum yang ingin belajar langsung dari praktisi dan memperluas jaringan di dunia IT. Jangan lewatkan kesempatan langka ini!
-        </p>
-        <h3 class="text-2xl font-semibold mb-4 text-secondary drop-shadow-glow">Detail Acara</h3>
-        <ul class="list-disc list-inside text-gray-600 mb-6">
-          <li>Tanggal: 18 Juni 2025</li>
-          <li>Waktu: 00.00 - 23.00 WIB</li>
-          <li>Lokasi: Kampus JGU</li>
-        </ul>
-        <h3 class="text-2xl font-semibold mb-4 text-secondary drop-shadow-glow">Hadiah</h3>
-        <p class="text-gray-600 leading-relaxed mb-6">
-          Dapatkan sertifikat dari workshop ini dan kesempatan untuk mendapatkan hadiah menarik bagi peserta terbaik.
-        </p>
-       <div class="container-eg-btn-4 uf-border">
-        <a href="coming_soon.html" target="_blank" 
-          class="button button-5">
-          Daftar Sekarang
-        </a>
+    <!-- Event Details Section -->
+    <section
+      class="py-24 bg-primary text-secondary bg-noise"
+      data-aos="fade-up"
+    >
+      <div class="max-w-4xl mx-auto px-4">
+        <div
+          class="bg-white rounded-xl p-10 shadow-xl border-l-4 border-blue-500 animate-fadeIn"
+        >
+          <h2
+            class="text-3xl font-semibold mb-4 text-secondary drop-shadow-glow"
+          >
+            Penerapan IoT dari Inovasi Jakarta Smart City ke Generasi Muda!
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Dengan tema "Smart Thinking for Smart Living: Generasi Muda yang Berdampak!", 
+            kita akan belajar langsung dari ahlinya, Ryan Rizky Muharam (Staff Teknis Jakarta Smart City), 
+            untuk berpikir cerdas dan solutif dalam menghadapi tantangan kota modern melalui teknologi.
+
+          </p>
+          <h3
+            class="text-2xl font-semibold mb-4 text-secondary drop-shadow-glow"
+          >
+            Detail Acara
+          </h3>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                📅 Tanggal: Sabtu, 05 Juli 2025 <br>
+                📍 Lokasi: Universitas Global Jakarta <br>
+                💳 Biaya Pendaftaran: Rp5.000,-
+            </p>
+          <h3
+            class="text-2xl font-semibold mb-4 text-secondary drop-shadow-glow"
+          >
+            Benefits
+          </h3>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Hanya dengan 5K, kamu akan mendapat wawasan konkret, ilmu mendalam, plus Beasiswa & Sertifikat! 🚀
+          </p>
+          <div class="container-eg-btn-4 uf-border">
+            <a
+              href="https://forms.gle/kXvUMjV6TJi6Bvju9"
+              target="_blank"
+              class="button button-5"
+            >
+              Daftar Sekarang
+            </a>
+          </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-6 bg-secondary text-primary text-sm">© 2025 IT's Day. All rights reserved.</footer>
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-secondary text-primary text-sm">
+      © 2025 IT's Day. All rights reserved.
+    </footer>
 
-  <!-- AOS Init -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000, once: true });</script>
-</body>
+    <!-- AOS Init -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
 
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("main-header");
+        if (window.scrollY > 10) {
+          header.classList.add("bg-white/75", "shadow-md");
+        } else {
+          header.classList.remove("bg-white/75", "shadow-md");
+        }
+      });
+    </script>
+  </body>
 </html>
